@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+}
+
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#top {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+#workingarea {
+  position: relative;
+  width: 80%;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+#nav img {
+  height: 60px;
+}
+
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+#nav a {
+  pointer-events: all;
+  color: white;
+  font-family: "gilroy";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#hero {
+  margin-top: 4vh;
+  display: flex;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  transform: translate(0%, -50%);
+  justify-content: space-between;
+  width: 100%;
+}
+
+#heroleft {
+  min-width: 50%;
+}
+
+#heroleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+
+#heroleft .elem h1 {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  line-height: 0.9;
+  font-family: "Futura";
+  color: white;
+  font-weight: 100;
+  font-size: 11vw;
+}
+
+#heroleft button {
+  margin-top: 2ww;
+  padding: 0.8vw 3vw;
+  font-size: 3vw;
+  font-family: "kajiro";
+  pointer-events: all;
+}
+#heroright {
+  width: 17%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#heroright p {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+}
+#heroright #imagediv {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 170px;
+  background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG90cmFpdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60);
+  background-size: cover;
+  background-position: center;
+}
+#heroright p:nth-child(3) {
+  margin-bottom: 100px;
+}
